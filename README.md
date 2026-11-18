@@ -72,6 +72,3 @@ Content-validated uploads, 16 MB limit, random server-side filenames, CSRF (Flas
 - *Stale manifest*: dataset changed; regenerate deliberately with `--regenerate-split --yes`.
 - *ImageNet weights download fails*: use `--no-pretrained` (expect lower accuracy).
 - *Charts/icons not loading*: pages load Bootstrap, icons, fonts and Chart.js from CDNs and need internet access.
-
-## Git
-Do not commit `.env`, datasets, models, databases (see `.gitignore`). Fresh repo: `git init && git add . && git commit -m "Initial commit"`. Nothing is pushed automatically.
