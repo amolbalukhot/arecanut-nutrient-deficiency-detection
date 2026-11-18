@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <span class="eyebrow"><i class="bi bi-cpu"></i> Two-stage deep learning pipeline</span>
+  <h1>Arecanut Leaf Verification<br>&amp; Nutrient Deficiency Detection</h1>
+  <p class="lead">Upload a leaf photo. We first confirm it is an arecanut leaf, then screen it for nitrogen, potassium or magnesium deficiency with an explainable heatmap.</p>
+</section>
+{% if error %}<div class="alert alert-danger" role="alert"><i class="bi bi-exclamation-triangle"></i> {{ error }}</div>{% endif %}
+{% if models_ready and (not models_ready.verification or not models_ready.mobilenetv2) %}
+<div class="alert alert-warning" role="alert"><i class="bi bi-info-circle"></i> Trained models missing:
+  {% if not models_ready.verification %}run <code>python train_verification.py</code>. {% endif %}
+  {% if not models_ready.mobilenetv2 %}run <code>python train.py</code>.{% endif %}
+</div>
+{% endif %}
+<div class="row g-4">
+  <div class="col-lg-7">
+    <form id="uploadForm" class="card-panel" method="post" action="{{ url_for('prediction.predict') }}" enctype="multipart/form-data">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <label for="image" class="dropzone" id="dropzone" tabindex="0">
+        <i class="bi bi-cloud-arrow-up"></i>
+        <strong>Drag &amp; drop a leaf image</strong>
+        <span>or click to browse &middot; JPG, PNG, WEBP &middot; max {{ max_mb or 16 }} MB</span>
+        <img id="preview" class="preview d-none" alt="Selected image preview">
+      </label>
+      <input type="file" id="image" name="image" accept=".jpg,.jpeg,.png,.webp,image/*" class="visually-hidden" required>
+      <div id="clientError" class="text-danger small mt-2" role="alert"></div>
+      <div class="d-flex gap-2 mt-3">
+        <button type="submit" class="btn btn-brand" id="submitBtn"><span class="spinner-border spinner-border-sm d-none" id="spin"></span> <i class="bi bi-search"></i> Analyze image</button>
+        <button type="button" class="btn btn-outline-secondary" id="clearBtn">Clear</button>
+      </div>
+    </form>
+  </div>
+  <div class="col-lg-5">
+    <div class="card-panel h-100">
+      <h2 class="h5">How it works</h2>
+      <div class="step"><span class="num">1</span><div><strong>Stage 1: Leaf verification</strong><p>A binary CNN checks the photo shows an arecanut leaf. Rejected images stop here.</p></div></div>
+      <div class="step"><span class="num">2</span><div><strong>Stage 2: Nutrient screening</strong><p>MobileNetV2 predicts Healthy, Nitrogen, Potassium or Magnesium deficiency, with a Grad-CAM view.</p></div></div>
+      <p class="disclaimer"><i class="bi bi-shield-exclamation"></i> Predictions are screening estimates. Confirm with soil or leaf testing and an agronomist.</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

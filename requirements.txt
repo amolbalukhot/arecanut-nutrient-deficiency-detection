@@ -1,0 +1,11 @@
+# Tested with Python 3.12 (TensorFlow 2.16+ requires Python 3.9-3.12)
+Flask>=3.0
+Flask-WTF>=1.2
+tensorflow>=2.16
+numpy>=1.26
+Pillow>=10.0
+opencv-python-headless>=4.9
+scikit-learn>=1.4
+matplotlib>=3.8
+reportlab>=4.0
+pytest>=8.0

@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+database/*.db
+saved_models/*.keras
+static/uploads/*
+static/heatmaps/*
+static/reports/*
+!static/*/.gitkeep
+verification_dataset/*/*
+dataset/*/*
+.pytest_cache/

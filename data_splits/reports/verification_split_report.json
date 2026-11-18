@@ -1,0 +1,514 @@
+{
+  "dataset": "verification",
+  "method": "stratified+duplicate-aware (no group metadata supplied)",
+  "seed": 42,
+  "total": 1399,
+  "split_counts": {
+    "train": 1119,
+    "val": 140,
+    "test": 140
+  },
+  "split_percentages": {
+    "train": 79.99,
+    "val": 10.01,
+    "test": 10.01
+  },
+  "target_percentages": {
+    "train": 80,
+    "val": 10,
+    "test": 10
+  },
+  "per_class_per_split": {
+    "Arecanut": {
+      "train": 559,
+      "val": 70,
+      "test": 70
+    },
+    "Non_Arecanut": {
+      "train": 560,
+      "val": 70,
+      "test": 70
+    }
+  },
+  "group_aware": false,
+  "corrupted": [],
+  "unsupported": [],
+  "imbalance_ratio": 1.0,
+  "duplicates": {
+    "exact_duplicate_groups": [
+      [
+        "Arecanut/Healthy (2).JPG",
+        "Arecanut/Healthy (3).JPG"
+      ],
+      [
+        "Arecanut/Healthy (26).JPG",
+        "Arecanut/Healthy (27).JPG"
+      ],
+      [
+        "Arecanut/Healthy (37).JPG",
+        "Arecanut/Healthy (38).JPG",
+        "Arecanut/Healthy (39).JPG"
+      ],
+      [
+        "Arecanut/Healthy (49).JPG",
+        "Arecanut/Healthy (50).JPG",
+        "Arecanut/Healthy (51).JPG"
+      ],
+      [
+        "Arecanut/Healthy (52).JPG",
+        "Arecanut/Healthy (53).JPG",
+        "Arecanut/Healthy (54).JPG"
+      ],
+      [
+        "Arecanut/Healthy_Leaf_original_517.jpg_275f54cd-cf7a-4db3-9790-42aec53c8257.jpg",
+        "Arecanut/Healthy_Leaf_original_517.jpg_de447865-1946-486f-8bbe-2c2d92f066e6.jpg"
+      ],
+      [
+        "Arecanut/Healthy_Leaf_original_52.jpg_c9092aa0-15ba-457b-b245-31eccf0bfcbe.jpg",
+        "Arecanut/Healthy_Leaf_original_52.jpg_ee04ff9a-449e-4f89-9b49-34a417327fe1.jpg"
+      ],
+      [
+        "Arecanut/Healthy_Leaf_original_56.jpg_bf480324-f9d3-4d76-b273-cf13e81c3732.jpg",
+        "Arecanut/Healthy_Leaf_original_56.jpg_c7e86518-7567-4707-90c8-30bc83575d32.jpg"
+      ],
+      [
+        "Arecanut/Magnesium (102).JPG",
+        "Arecanut/Magnesium (103).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (31).JPG",
+        "Arecanut/Magnesium (32).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (42).JPG",
+        "Arecanut/Magnesium (43).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (50).JPG",
+        "Arecanut/Magnesium (51).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (52).JPG",
+        "Arecanut/Magnesium (53).JPG",
+        "Arecanut/Magnesium (54).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (59).JPG",
+        "Arecanut/Magnesium (60).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (61).JPG",
+        "Arecanut/Magnesium (62).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (68).JPG",
+        "Arecanut/Magnesium (69).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (76).JPG",
+        "Arecanut/Magnesium (77).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (80).JPG",
+        "Arecanut/Magnesium (81).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (84).JPG",
+        "Arecanut/Magnesium (85).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (88).JPG",
+        "Arecanut/Magnesium (89).JPG",
+        "Arecanut/Magnesium (90).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (47) - Copy.JPG",
+        "Arecanut/Nitrogen (47).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (48) - Copy.JPG",
+        "Arecanut/Nitrogen (48).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (49) - Copy.JPG",
+        "Arecanut/Nitrogen (49).JPG"
+      ]
+    ],
+    "near_duplicate_pairs_for_review": [
+      [
+        "Arecanut/Healthy (111).JPG",
+        "Arecanut/Healthy (21).JPG"
+      ],
+      [
+        "Arecanut/Healthy (111).JPG",
+        "Arecanut/Healthy (22).JPG"
+      ],
+      [
+        "Arecanut/Healthy (111).JPG",
+        "Arecanut/Magnesium (120).JPG"
+      ],
+      [
+        "Arecanut/Healthy (111).JPG",
+        "Arecanut/Magnesium (44).JPG"
+      ],
+      [
+        "Arecanut/Healthy (111).JPG",
+        "Arecanut/Nitrogen (123).JPG"
+      ],
+      [
+        "Arecanut/Healthy (112).JPG",
+        "Arecanut/Nitrogen (16).JPG"
+      ],
+      [
+        "Arecanut/Healthy (113).JPG",
+        "Arecanut/Nitrogen (18).JPG"
+      ],
+      [
+        "Arecanut/Healthy (114).JPG",
+        "Arecanut/Nitrogen (18).JPG"
+      ],
+      [
+        "Arecanut/Healthy (114).JPG",
+        "Arecanut/Potassium (4).JPG"
+      ],
+      [
+        "Arecanut/Healthy (129).JPG",
+        "Arecanut/Healthy (19).JPG"
+      ],
+      [
+        "Arecanut/Healthy (129).JPG",
+        "Arecanut/Magnesium (50).JPG"
+      ],
+      [
+        "Arecanut/Healthy (129).JPG",
+        "Arecanut/Magnesium (51).JPG"
+      ],
+      [
+        "Arecanut/Healthy (132).JPG",
+        "Arecanut/Magnesium (58).JPG"
+      ],
+      [
+        "Arecanut/Healthy (139).JPG",
+        "Arecanut/Nitrogen (95).JPG"
+      ],
+      [
+        "Arecanut/Healthy (14).JPG",
+        "Arecanut/Nitrogen (111).JPG"
+      ],
+      [
+        "Arecanut/Healthy (14).JPG",
+        "Arecanut/Nitrogen (13).JPG"
+      ],
+      [
+        "Arecanut/Healthy (14).JPG",
+        "Arecanut/Nitrogen (137).JPG"
+      ],
+      [
+        "Arecanut/Healthy (17).JPG",
+        "Arecanut/Magnesium (42).JPG"
+      ],
+      [
+        "Arecanut/Healthy (17).JPG",
+        "Arecanut/Magnesium (43).JPG"
+      ],
+      [
+        "Arecanut/Healthy (18).JPG",
+        "Arecanut/Nitrogen (137).JPG"
+      ],
+      [
+        "Arecanut/Healthy (21).JPG",
+        "Arecanut/Healthy (22).JPG"
+      ],
+      [
+        "Arecanut/Healthy (21).JPG",
+        "Arecanut/Nitrogen (123).JPG"
+      ],
+      [
+        "Arecanut/Healthy (22).JPG",
+        "Arecanut/Magnesium (44).JPG"
+      ],
+      [
+        "Arecanut/Healthy (23).JPG",
+        "Arecanut/Magnesium (28).JPG"
+      ],
+      [
+        "Arecanut/Healthy (24).JPG",
+        "Arecanut/Nitrogen (12).JPG"
+      ],
+      [
+        "Arecanut/Healthy (25).JPG",
+        "Arecanut/Magnesium (58).JPG"
+      ],
+      [
+        "Arecanut/Healthy (75).JPG",
+        "Arecanut/Magnesium (58).JPG"
+      ],
+      [
+        "Arecanut/Healthy (75).JPG",
+        "Arecanut/Nitrogen (95).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (11).JPG",
+        "Arecanut/Magnesium (125).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (11).JPG",
+        "Arecanut/Magnesium (44).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (11).JPG",
+        "Arecanut/Nitrogen (11).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (120).JPG",
+        "Arecanut/Magnesium (7).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (123).JPG",
+        "Arecanut/Nitrogen (18).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (125).JPG",
+        "Arecanut/Magnesium (44).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (125).JPG",
+        "Arecanut/Nitrogen (94).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (30).JPG",
+        "Arecanut/Magnesium (7).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (30).JPG",
+        "Arecanut/Nitrogen (10).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (49).JPG",
+        "Arecanut/Magnesium (50).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (49).JPG",
+        "Arecanut/Magnesium (51).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (49).JPG",
+        "Arecanut/Nitrogen (88).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (50).JPG",
+        "Arecanut/Nitrogen (88).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (51).JPG",
+        "Arecanut/Nitrogen (88).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (58).JPG",
+        "Arecanut/Nitrogen (94).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (58).JPG",
+        "Arecanut/Nitrogen (95).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (7).JPG",
+        "Arecanut/Magnesium (95).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (7).JPG",
+        "Arecanut/Nitrogen (10).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (7).JPG",
+        "Arecanut/Nitrogen (12).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (7).JPG",
+        "Arecanut/Nitrogen (133).JPG"
+      ],
+      [
+        "Arecanut/Magnesium (8).JPG",
+        "Arecanut/Nitrogen (6).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (10).JPG",
+        "Arecanut/Nitrogen (133).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (10).JPG",
+        "Arecanut/Nitrogen (94).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (100).JPG",
+        "Arecanut/Nitrogen (116).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (100).JPG",
+        "Arecanut/Potassium (4).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (102).JPG",
+        "Arecanut/Nitrogen (116).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (103).JPG",
+        "Arecanut/Nitrogen (133).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (103).JPG",
+        "Arecanut/Nitrogen (18).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (103).JPG",
+        "Arecanut/Nitrogen (22).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (103).JPG",
+        "Arecanut/Nitrogen (25).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (103).JPG",
+        "Arecanut/Nitrogen (90).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (103).JPG",
+        "Arecanut/Nitrogen (94).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (108).JPG",
+        "Arecanut/Nitrogen (18).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (108).JPG",
+        "Arecanut/Potassium (4).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (109).JPG",
+        "Arecanut/Nitrogen (137).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (112).JPG",
+        "Arecanut/Nitrogen (96).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (114).JPG",
+        "Arecanut/Nitrogen (13).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (114).JPG",
+        "Arecanut/Nitrogen (96).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (116).JPG",
+        "Arecanut/Nitrogen (127).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (116).JPG",
+        "Arecanut/Nitrogen (129).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (116).JPG",
+        "Arecanut/Nitrogen (18).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (116).JPG",
+        "Arecanut/Nitrogen (90).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (116).JPG",
+        "Arecanut/Nitrogen (94).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (116).JPG",
+        "Arecanut/Potassium (4).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (117).JPG",
+        "Arecanut/Nitrogen (131).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (117).JPG",
+        "Arecanut/Nitrogen (137).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (119).JPG",
+        "Arecanut/Nitrogen (8).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (131).JPG",
+        "Arecanut/Nitrogen (132).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (133).JPG",
+        "Arecanut/Nitrogen (99).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (17).JPG",
+        "Arecanut/Nitrogen (93).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (18).JPG",
+        "Arecanut/Nitrogen (20).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (18).JPG",
+        "Arecanut/Nitrogen (21).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (18).JPG",
+        "Arecanut/Nitrogen (22).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (18).JPG",
+        "Arecanut/Nitrogen (5).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (18).JPG",
+        "Arecanut/Nitrogen (90).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (18).JPG",
+        "Arecanut/Nitrogen (91).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (18).JPG",
+        "Arecanut/Nitrogen (94).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (18).JPG",
+        "Arecanut/Potassium (4).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (21).JPG",
+        "Arecanut/Nitrogen (5).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (28).JPG",
+        "Arecanut/Potassium (4).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (5).JPG",
+        "Arecanut/Nitrogen (91).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (91).JPG",
+        "Arecanut/Nitrogen (95).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (94).JPG",
+        "Arecanut/Nitrogen (95).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (94).JPG",
+        "Arecanut/Nitrogen (99).JPG"
+      ],
+      [
+        "Arecanut/Nitrogen (94).JPG",
+        "Arecanut/Potassium (4).JPG"
+      ]
+    ],
+    "label_conflicts": []
+  },
+  "leakage_problems": []
+}

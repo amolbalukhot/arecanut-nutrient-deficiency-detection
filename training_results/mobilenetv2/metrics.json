@@ -1,0 +1,51 @@
+{
+  "evaluation_set": "held-out TEST split",
+  "test_accuracy": 0.925,
+  "confusion_matrix": [
+    [
+      30,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      30,
+      0,
+      0
+    ],
+    [
+      0,
+      3,
+      27,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      24
+    ]
+  ],
+  "class_mapping": {
+    "Healthy": 0,
+    "Nitrogen_Deficiency": 1,
+    "Potassium_Deficiency": 2,
+    "Magnesium_Deficiency": 3
+  },
+  "seed": 42,
+  "pretrained_imagenet": true,
+  "finetune_epochs": 0,
+  "split_method": "manual folder split (train/val/test folders)",
+  "split_counts": {
+    "train": 484,
+    "val": 110,
+    "test": 120
+  },
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "note": "Test metrics come from a single final evaluation; they do not prove generalisation to new farms, cameras or lighting."
+}

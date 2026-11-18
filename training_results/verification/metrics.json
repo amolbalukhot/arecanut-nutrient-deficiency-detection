@@ -1,0 +1,30 @@
+{
+  "evaluation_set": "held-out TEST split",
+  "test_accuracy": 1.0,
+  "confusion_matrix": [
+    [
+      70,
+      0
+    ],
+    [
+      0,
+      70
+    ]
+  ],
+  "class_mapping": {
+    "Arecanut": 0,
+    "Non_Arecanut": 1
+  },
+  "precision_non_arecanut": 1.0,
+  "recall_non_arecanut": 1.0,
+  "f1_non_arecanut": 1.0,
+  "seed": 42,
+  "split_method": "stratified+duplicate-aware (no group metadata supplied)",
+  "epochs_run": 30,
+  "input_shape": [
+    128,
+    128,
+    3
+  ],
+  "output": "sigmoid = P(Non_Arecanut); accept if 1-p >= threshold"
+}

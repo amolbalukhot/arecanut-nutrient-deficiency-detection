@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}History{% endblock %}
+{% block content %}
+<div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+  <h1 class="h3 mb-0">Prediction history</h1>
+  <form class="d-flex gap-2" method="get"><input class="form-control" name="q" value="{{ q }}" placeholder="Search class or ID" aria-label="Search"><button class="btn btn-brand">Search</button></form>
+</div>
+<div class="card-panel">
+{% if h['items'] %}
+<div class="table-responsive"><table class="table align-middle">
+  <thead><tr><th>ID</th><th>Date &amp; time</th><th>Verification</th><th>Prediction</th><th>Confidence</th><th>Report</th></tr></thead><tbody>
+  {% for r in h['items'] %}<tr>
+    <td>{{ r.id }}</td><td>{{ r.created_at }}</td>
+    <td><span class="badge {{ 'bg-success' if r.verification_accepted else 'bg-danger' }}">{{ 'Accepted' if r.verification_accepted else 'Rejected' }}</span></td>
+    <td>{{ r.nutrient_class.replace('_',' ') if r.nutrient_class else '-' }}</td>
+    <td>{{ '%.1f%%'|format(r.nutrient_confidence*100) if r.nutrient_confidence is not none else '-' }}</td>
+    <td><a href="{{ url_for('prediction.download', pid=r.id) }}"><i class="bi bi-file-earmark-pdf"></i> PDF</a></td></tr>{% endfor %}
+</tbody></table></div>
+<nav aria-label="Pages"><ul class="pagination mb-0">
+  {% for n in range(1, h.pages+1) %}<li class="page-item {{ 'active' if n==h.page }}"><a class="page-link" href="{{ url_for('dashboard.history', page=n, q=q) }}">{{ n }}</a></li>{% endfor %}
+</ul></nav>
+{% else %}<p class="text-center text-muted py-4 mb-0">No predictions found.</p>{% endif %}
+</div>
+{% endblock %}
